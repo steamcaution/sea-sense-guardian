@@ -231,47 +231,45 @@ export const StatisticsSection = () => {
 
   useEffect(() => {
     const loadAccident = async () => {
-      try {
-        const res = await fetch(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
-        const buffer = await res.arrayBuffer();
-        const workbook = new ExcelJS.Workbook();
-        await workbook.xlsx.load(buffer);
-
-        const sheet = workbook.worksheets[0];
-        const json = parseExcelSheet(sheet);
-        setAccidentData(processAccidentData(json));
-      } catch (e) {
-        console.error(e);
-        setErrorAccident('해양사고 데이터를 불러오지 못했습니다.');
-      } finally {
-        setLoadingAccident(false);
-      }
+      // try {
+      //   const res = await fetch(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
+      //   const buffer = await res.arrayBuffer();
+      //   const workbook = new ExcelJS.Workbook();
+      //   await workbook.xlsx.load(buffer);
+      //
+      //   const sheet = workbook.worksheets[0];
+      //   const json = parseExcelSheet(sheet);
+      //   setAccidentData(processAccidentData(json));
+      // } catch (e) {
+      //   console.error(e);
+      //   setErrorAccident('해양사고 데이터를 불러오지 못했습니다.');
+      // } finally {
+      //   setLoadingAccident(false);
+      // }
     };
 
     const loadCasualty = async () => {
-      try {
-        const res = await fetch(getAssetPath('/excel/연도별통계_인명피해.xlsx'));
-        const buffer = await res.arrayBuffer();
-        const workbook = new ExcelJS.Workbook();
-        await workbook.xlsx.load(buffer);
-
-        const sheet = workbook.worksheets[0];
-        const json = parseExcelSheet(sheet);
-        setCasualtyData(processCasualtyData(json));
-      } catch (e) {
-        console.error(e);
-        setErrorCasualty('인명피해 데이터를 불러오지 못했습니다.');
-      } finally {
-        setLoadingCasualty(false);
-      }
+      // try {
+      //   const res = await fetch(getAssetPath('/excel/연도별통계_인명피해.xlsx'));
+      //   const buffer = await res.arrayBuffer();
+      //   const workbook = new ExcelJS.Workbook();
+      //   await workbook.xlsx.load(buffer);
+      //
+      //   const sheet = workbook.worksheets[0];
+      //   const json = parseExcelSheet(sheet);
+      //   setCasualtyData(processCasualtyData(json));
+      // } catch (e) {
+      //   console.error(e);
+      //   setErrorCasualty('인명피해 데이터를 불러오지 못했습니다.');
+      // } finally {
+      //   setLoadingCasualty(false);
+      // }
     };
 
     loadAccident().then(() => {});
     loadCasualty().then(() => {});
   }, []);
 
-  console.log(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
-  console.log(globalThis?.location?.href);
   return (
     <StatisticsSectionWrapper>
       <StatisticsInner>
