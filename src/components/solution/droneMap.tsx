@@ -1,5 +1,5 @@
-import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
 import { MapLoading } from '@/styles/solution.styles';
 
 const DroneMapContent = dynamic(() => import('./droneMapContent'), {

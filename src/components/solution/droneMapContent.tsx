@@ -1,3 +1,5 @@
+'use client';
+
 import { Circle, MapContainer, Marker, Polyline, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import React, { RefObject, useEffect, useRef, useState } from 'react';
@@ -112,6 +114,8 @@ export default function DroneMapContent() {
   const mapRef = useRef<L.Map | null>(null);
   const moveProgressRef = useRef(0);
 
+  const [isMounted, setIsMounted] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setDronePosition(() => {
@@ -129,6 +133,14 @@ export default function DroneMapContent() {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return <DroneMapContainer>지도 로드 중...</DroneMapContainer>;
+  }
 
   const route: [number, number][] = [startPosition, targetPosition];
 
