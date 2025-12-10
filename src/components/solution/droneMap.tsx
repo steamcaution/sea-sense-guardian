@@ -7,9 +7,9 @@ export const DroneMap = () => {
   const [MapComponent, setMapComponent] = useState<ComponentType | null>(null);
 
   useEffect(() => {
-    // import('./droneMapContent').then(mod => {
-    //   setMapComponent(() => mod.default);
-    // });
+    import('./droneMapContent').then(mod => {
+      setMapComponent(() => mod.default);
+    });
   }, []);
 
   if (!MapComponent) {

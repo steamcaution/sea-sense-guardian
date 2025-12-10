@@ -12,7 +12,6 @@ import {
   SimulationMapLayout,
   SimulationWrapper
 } from '@/styles/solution.styles';
-import { DroneMap } from '@components/solution/droneMap';
 
 export const SimulationSection = () => {
   return (
@@ -27,9 +26,7 @@ export const SimulationSection = () => {
         </HeaderSection>
 
         <SimulationMapLayout>
-          <MapColumnWrapper>
-            <DroneMap />
-          </MapColumnWrapper>
+          <MapColumnWrapper>{/*<DroneMap />*/}</MapColumnWrapper>
           <CardsColumnWrapper>
             <FeatureCard>
               <FeatureIcon>🗺️</FeatureIcon>
