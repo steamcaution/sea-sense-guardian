@@ -99,9 +99,9 @@ export const ServiceVideoSection = () => {
             </VideoWrapper>
 
             <TabButtonGroup>
-              {videoDataList.map(video => (
+              {videoDataList.map((video, index) => (
                 <TabButton
-                  key={video.id}
+                  key={`video_${video.id}${index}`}
                   isActive={activeVideoId === video.id}
                   onClick={() => setActiveVideoId(video.id)}
                 >

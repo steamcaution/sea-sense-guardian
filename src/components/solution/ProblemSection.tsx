@@ -68,12 +68,12 @@ export const ProblemSection = () => {
 
         <ProblemsGrid>
           {problems.map((problem, index) => (
-            <ProblemCard key={`problem_${problem.id}`} isVisible={isVisible} delay={index}>
+            <ProblemCard key={`problem_${problem.id}${index}`} isVisible={isVisible} delay={index}>
               <CardIcon>{problem.icon}</CardIcon>
               <CardTitle>{problem.title}</CardTitle>
               <CardContent>
-                {problem.items.map(item => (
-                  <li key={`problem_content_${problem.id}`}>{item}</li>
+                {problem.items.map((item, index) => (
+                  <li key={`problem_content_${problem.id}${index}`}>{item}</li>
                 ))}
               </CardContent>
             </ProblemCard>

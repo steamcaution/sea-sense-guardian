@@ -270,13 +270,11 @@ export const StatisticsSection = () => {
     loadCasualty().then(() => {});
   }, []);
 
+  console.log(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
+  console.log(window.location.href);
   return (
     <StatisticsSectionWrapper>
       <StatisticsInner>
-        {/*<StatisticsTitle>*/}
-        {/*  해양 관제 시스템의 <span>필요성</span>*/}
-        {/*</StatisticsTitle>*/}
-
         <ChartsGrid>
           <ChartContainer>
             <h3>연도별 해양사고 발생 추이</h3>
