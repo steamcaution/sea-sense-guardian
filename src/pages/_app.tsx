@@ -8,7 +8,6 @@ import { NextPage } from 'next';
 import '../styles/_base.scss';
 import { createAppCache } from '@/lib/create-emotion-cache';
 import { FloatingButton } from '@components/floating';
-import { getAssetPath } from '@/lib/getAssertPath';
 
 export type NextPageWithLayout<P = AppPageLayoutProps, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement, props: AppPageLayoutProps) => ReactNode;
@@ -30,13 +29,6 @@ export default function MyApp({ Component, pageProps, emotionCache = clientSideE
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <link
-          rel="preload"
-          href={getAssetPath('/fonts/BookkMyungjo_Light.woff')}
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <style>
