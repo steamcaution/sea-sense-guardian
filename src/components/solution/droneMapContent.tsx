@@ -2,7 +2,7 @@
 
 import { Circle, MapContainer, Marker, Polyline, Popup, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
-import React, { RefObject, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { DroneMapContainer, InfoPanel, StatusBadge } from '@/styles/solution.styles';
 
@@ -58,7 +58,7 @@ const updateDroneState = (
   setBattery: (fn: (prev: number) => number) => void,
   setDistance: (distance: number) => void,
   setDroneStatus: (status: 'active' | 'arrived') => void,
-  moveProgressRef: RefObject<number>
+  moveProgressRef: { current: number }
 ): [number, number] => {
   const newProgress = currentProgress + 0.02;
 
@@ -112,8 +112,7 @@ export default function DroneMapContent() {
   const [speed, setSpeed] = useState(0);
   const [battery, setBattery] = useState(100);
   const mapRef = useRef<L.Map | null>(null);
-  const moveProgressRef = useRef(0);
-
+  const moveProgressRef = useRef<number>(0);
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
