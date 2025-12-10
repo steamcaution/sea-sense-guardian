@@ -38,8 +38,6 @@ ChartJS.register(
   Filler
 );
 
-type MixedChartType = 'bar' | 'line';
-type MixedChartData = ChartData<MixedChartType, number[], string>;
 type AccidentChartData = ChartData<'bar', number[], string>;
 type LineChartData = ChartData<'line', number[], string>;
 
@@ -180,7 +178,7 @@ const processCasualtyData = (jsonData: any[]): LineChartData => {
 };
 
 export const StatisticsSection = () => {
-  const [accidentData, setAccidentData] = useState<MixedChartData | null>(null);
+  const [accidentData, setAccidentData] = useState<AccidentChartData | null>(null);
   const [casualtyData, setCasualtyData] = useState<LineChartData | null>(null);
 
   const [loadingAccident, setLoadingAccident] = useState(true);
@@ -240,7 +238,7 @@ export const StatisticsSection = () => {
               {loadingAccident && <LoadingMessage>해양사고 데이터 로드 중...</LoadingMessage>}
               {!loadingAccident && errorAccident && <ErrorMessage>{errorAccident}</ErrorMessage>}
               {!loadingAccident && !errorAccident && accidentData && (
-                <Chart type="bar" data={accidentData} options={baseChartOptions as ChartOptions<MixedChartType>} />
+                <Chart type="bar" data={accidentData} options={baseChartOptions as ChartOptions<'bar'>} />
               )}
             </ChartWrapper>
           </ChartContainer>
