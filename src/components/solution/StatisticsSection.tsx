@@ -271,7 +271,7 @@ export const StatisticsSection = () => {
   }, []);
 
   console.log(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
-  console.log(window.location.href);
+  console.log(globalThis.location.href);
   return (
     <StatisticsSectionWrapper>
       <StatisticsInner>
