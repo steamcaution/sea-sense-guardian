@@ -69,7 +69,7 @@ const commonOptions = {
 
 const commonScales = {
   y: {
-    grid: { color: 'rgba(255, 255, 255, 0.06)' },
+    grid: { color: 'rgba(0, 0, 0, 0.06)' },
     ticks: { color: '#252525' },
     beginAtZero: true
   },
