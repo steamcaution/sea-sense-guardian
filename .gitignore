@@ -4,7 +4,7 @@ out
 # compiled output
 dist
 node_modules/
-.next/
+.next
 
 # Logs
 logs/
@@ -19,7 +19,8 @@ logs
 /.nyc_output
 
 # IDEs and editors
-/.idea
+.idea/
+.vscode/
 .project
 .classpath
 .c9/
@@ -27,10 +28,3 @@ logs
 .settings/
 *.sublime-workspace
 *.iml
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
