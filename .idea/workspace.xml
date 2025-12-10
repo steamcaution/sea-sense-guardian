@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08830bf1-4b1c-478b-8cb2-c7f6ff65c532" name="변경" comment="init">
+      <change afterPath="$PROJECT_DIR$/.env.github" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[root-of-the-server]__6e020478._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[root-of-the-server]__6e020478._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[root-of-the-server]__c7ae8543._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[root-of-the-server]__c7ae8543._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[turbopack-node]_transforms_webpack-loaders_ts_c84aa21a._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[turbopack-node]_transforms_webpack-loaders_ts_c84aa21a._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[turbopack]_runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/chunks/[turbopack]_runtime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/webpack-loaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/build/webpack-loaders.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/cache/.rscinfo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/cache/chrome-devtools-workspace-uuid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/cache/next-devtools-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/fallback-build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/logs/next-development.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/prerender-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/routes-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/app-paths-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[externals]_next_dist_shared_lib_no-fallback-error_external_59b92b38.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[externals]_next_dist_shared_lib_no-fallback-error_external_59b92b38.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__3a3ceb8f._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__3a3ceb8f._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__4329e816._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__4329e816._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__b1f7a0f8._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__b1f7a0f8._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__f14dcc39._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[root-of-the-server]__f14dcc39._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[turbopack]_runtime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/[turbopack]_runtime.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_186c80ea._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_186c80ea._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_030ce185._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_030ce185._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_e92e1daa._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/chunks/ssr/node_modules_next_e92e1daa._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/interception-route-rewrite-manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/middleware-build-manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/middleware-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/next-font-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app/build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app/client-build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app/next-font-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app/pages-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_app/react-loadable-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_document.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_document/next-font-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_document/pages-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_document/react-loadable-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error/build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error/client-build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error/next-font-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error/pages-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/_error/react-loadable-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index/build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index/client-build-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index/next-font-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index/pages-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/pages/index/react-loadable-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/server-reference-manifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/server/server-reference-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[next]_entry_page-loader_ts_43b523b5._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[next]_entry_page-loader_ts_43b523b5._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__a2d5dfc8._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__a2d5dfc8._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__e49e9f6e._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__e49e9f6e._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__ea2ca712._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/[root-of-the-server]__ea2ca712._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_22ad9890._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_22ad9890._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_4c469b44._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_4c469b44._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_8d9fab5d._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_8d9fab5d._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_19fd0646._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_19fd0646._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_6024eba3._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_6024eba3._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_client_3ede7da4._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_client_3ede7da4._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_client_d0aa886c._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_client_d0aa886c._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_compiled_8ca6b690._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_compiled_8ca6b690._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_shared_lib_4025f6b7._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_shared_lib_4025f6b7._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_shared_lib_cf5b50a6._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_dist_shared_lib_cf5b50a6._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_error_1cfbb379.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_error_1cfbb379.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_head_6b89d279.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_head_6b89d279.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_link_207af988.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_next_link_207af988.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_react-dom_4411d9bd._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/node_modules_react-dom_4411d9bd._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/pages/_error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages__app_2da965e7._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages__app_598be3cc._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages__error_111953d5._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages__error_2da965e7._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages_index_1d916dd9._.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_pages_index_2da965e7._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_styles__base_scss_ea21915b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/src_styles__base_scss_ea21915b.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/turbopack-src_pages__app_598be3cc._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/turbopack-src_pages__error_111953d5._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/chunks/turbopack-src_pages_index_1d916dd9._.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/development/_buildManifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/development/_clientMiddlewareManifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/static/development/_ssgManifest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/trace" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/types/cache-life.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/types/routes.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.next/dev/types/validator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/excel/연도별통계_인명피해.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/excel/연도별통계_해양사고.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/icons/instagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/icons/kakao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/icons/naver_blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/background_video.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/service_video1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/service_video2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/service_video3.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/floating.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/ProblemSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/ServiceVideoSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/SimulationSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/StatisticsSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/droneMap.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/solution/droneMapContent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/wrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/wrapper.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/create-emotion-cache.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/getAssertPath.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/solution/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/common.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/floating.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/footer.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/main.styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/solution.styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sea-sense-guardian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1765325946" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1765325945" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="36aJtwzT0IOhQpLSNlNAPHc8cFI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;24.7.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;24.7.2&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/IdeaProjects/sea-sense-guardian/public/videos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;문제&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/user/IdeaProjects/sea-sense-guardian/node_modules/typescript/lib&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/videos" />
+      <recent name="$PROJECT_DIR$/src/components/solution" />
+      <recent name="$PROJECT_DIR$/public/excel" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="$PROJECT_DIR$/public/videos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: 서버 측">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: 서버 측" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="08830bf1-4b1c-478b-8cb2-c7f6ff65c532" name="변경" comment="" />
+      <created>1765238967121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765238967121</updated>
+      <workItem from="1765238969333" duration="2014000" />
+      <workItem from="1765242033975" duration="18076000" />
+      <workItem from="1765292792361" duration="3105000" />
+      <workItem from="1765295929593" duration="1607000" />
+      <workItem from="1765326091728" duration="30913000" />
+      <workItem from="1765367411578" duration="912000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
