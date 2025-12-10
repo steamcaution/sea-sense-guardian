@@ -40,6 +40,7 @@ ChartJS.register(
 
 type MixedChartType = 'bar' | 'line';
 type MixedChartData = ChartData<MixedChartType, number[], string>;
+type AccidentChartData = ChartData<'bar', number[], string>;
 type LineChartData = ChartData<'line', number[], string>;
 
 const safeStringValue = (value: unknown): string => {
@@ -48,13 +49,6 @@ const safeStringValue = (value: unknown): string => {
   if (typeof value === 'number') return String(value);
   if (typeof value === 'boolean') return String(value);
   return '';
-};
-
-const baseColors = {
-  barBlue: 'rgba(10, 38, 71, 0.8)',
-  barTeal: 'rgba(44, 116, 179, 0.8)',
-  lineWhite: '#e74c3c',
-  lineAccent: '#e74c3c'
 };
 
 const baseChartOptions: ChartOptions<'line' | 'bar'> = {
@@ -125,67 +119,33 @@ const parseExcelSheet = (worksheet: ExcelJS.Worksheet): any[] => {
   return jsonData;
 };
 
-/**
- * 연도별 해양사고 엑셀 가공
- * - 첫 컬럼: 연도(labels)
- * - 나머지:
- *   * 앞 2개: 막대(bar)
- *   * 이후: 선(line)
- */
-const processAccidentData = (jsonData: any[]): MixedChartData => {
+// 연도별 해양사고 엑셀 가공
+const processAccidentData = (jsonData: any[]): AccidentChartData => {
   if (jsonData.length === 0) return { labels: [], datasets: [] };
 
   const firstKey = Object.keys(jsonData[0])[0];
   const labels = jsonData.map(row => String(row[firstKey]));
-  const dataKeys = Object.keys(jsonData[0]).slice(1);
+  const barKeys = Object.keys(jsonData[0]).slice(1); // 전부 막대로 처리
 
-  const barKeys = dataKeys.slice(0, 2);
-  const lineKeys = dataKeys.slice(2);
-
+  const colors = ['#2C74B3', '#0A2647', '#e74c3c'];
   const barDatasets = barKeys.map((key, index) => {
-    const color = index === 0 ? baseColors.barBlue : baseColors.barTeal;
+    const color = colors[index % colors.length];
     return {
-      type: 'bar' as const,
       label: key,
       data: jsonData.map(row => Number(row[key] || 0)),
       backgroundColor: color,
       borderRadius: 2,
-      borderSkipped: false,
-      order: 1
-    };
-  });
-
-  const lineDatasets = lineKeys.map(key => {
-    const color = baseColors.lineAccent;
-    return {
-      type: 'line' as const,
-      label: key,
-      data: jsonData.map(row => Number(row[key] || 0)),
-      borderColor: color,
-      backgroundColor: 'transparent',
-      tension: 0.25,
-      borderWidth: 2,
-      pointBackgroundColor: '#ffffff',
-      pointBorderColor: color,
-      pointRadius: 4,
-      pointHoverRadius: 6,
-      pointBorderWidth: 2,
-      yAxisID: 'y',
-      order: 0
+      borderSkipped: false
     };
   });
 
   return {
     labels,
-    datasets: [...barDatasets, ...lineDatasets]
+    datasets: barDatasets
   };
 };
 
-/**
- * 연도별 인명피해 엑셀 가공
- * - 첫 컬럼: 연도(labels)
- * - 나머지 전체: 선(line) 그래프
- */
+// 연도별 인명피해 엑셀 가공
 const processCasualtyData = (jsonData: any[]): LineChartData => {
   if (jsonData.length === 0) return { labels: [], datasets: [] };
 
@@ -231,39 +191,39 @@ export const StatisticsSection = () => {
 
   useEffect(() => {
     const loadAccident = async () => {
-      // try {
-      //   const res = await fetch(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
-      //   const buffer = await res.arrayBuffer();
-      //   const workbook = new ExcelJS.Workbook();
-      //   await workbook.xlsx.load(buffer);
-      //
-      //   const sheet = workbook.worksheets[0];
-      //   const json = parseExcelSheet(sheet);
-      //   setAccidentData(processAccidentData(json));
-      // } catch (e) {
-      //   console.error(e);
-      //   setErrorAccident('해양사고 데이터를 불러오지 못했습니다.');
-      // } finally {
-      //   setLoadingAccident(false);
-      // }
+      try {
+        const res = await fetch(getAssetPath('/excel/연도별통계_해양사고.xlsx'));
+        const buffer = await res.arrayBuffer();
+        const workbook = new ExcelJS.Workbook();
+        await workbook.xlsx.load(buffer);
+
+        const sheet = workbook.worksheets[0];
+        const json = parseExcelSheet(sheet);
+        setAccidentData(processAccidentData(json));
+      } catch (e) {
+        console.error(e);
+        setErrorAccident('해양사고 데이터를 불러오지 못했습니다.');
+      } finally {
+        setLoadingAccident(false);
+      }
     };
 
     const loadCasualty = async () => {
-      // try {
-      //   const res = await fetch(getAssetPath('/excel/연도별통계_인명피해.xlsx'));
-      //   const buffer = await res.arrayBuffer();
-      //   const workbook = new ExcelJS.Workbook();
-      //   await workbook.xlsx.load(buffer);
-      //
-      //   const sheet = workbook.worksheets[0];
-      //   const json = parseExcelSheet(sheet);
-      //   setCasualtyData(processCasualtyData(json));
-      // } catch (e) {
-      //   console.error(e);
-      //   setErrorCasualty('인명피해 데이터를 불러오지 못했습니다.');
-      // } finally {
-      //   setLoadingCasualty(false);
-      // }
+      try {
+        const res = await fetch(getAssetPath('/excel/연도별통계_인명피해.xlsx'));
+        const buffer = await res.arrayBuffer();
+        const workbook = new ExcelJS.Workbook();
+        await workbook.xlsx.load(buffer);
+
+        const sheet = workbook.worksheets[0];
+        const json = parseExcelSheet(sheet);
+        setCasualtyData(processCasualtyData(json));
+      } catch (e) {
+        console.error(e);
+        setErrorCasualty('인명피해 데이터를 불러오지 못했습니다.');
+      } finally {
+        setLoadingCasualty(false);
+      }
     };
 
     loadAccident().then(() => {});
