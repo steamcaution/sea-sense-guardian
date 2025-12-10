@@ -118,8 +118,8 @@ export const ServiceVideoSection = () => {
               <VideoInfoTitle>{activeVideo.title}</VideoInfoTitle>
               <VideoInfoDesc>{activeVideo.description}</VideoInfoDesc>
               <VideoInfoPoints>
-                {activeVideo.points.map(point => (
-                  <VideoInfoPoint key={activeVideo.id}>{point}</VideoInfoPoint>
+                {activeVideo.points.map((point, idx) => (
+                  <VideoInfoPoint key={`${activeVideo.id}_${idx}`}>{point}</VideoInfoPoint>
                 ))}
               </VideoInfoPoints>
             </VideoInfoCard>

@@ -40,7 +40,7 @@ export default function Footer() {
           <LeftSection>
             <CompanyInfo>
               <div className="company-name">씨센스 가디언</div>
-              <p>대표자 : OOO</p>
+              <p>대표자 : 서재향</p>
               <p>사업자등록번호 : 000-00-0000</p>
               {/*<p>통신판매업 신고번호 : 2025-0000-00000</p>*/}
               <p>(00000) 서울시 OO구 XXXX</p>
