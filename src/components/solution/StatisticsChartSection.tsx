@@ -7,7 +7,6 @@ import {
   ChartsGrid,
   ChartWrapper,
   ErrorMessage,
-  LoadingMessage,
   StatisticsInner,
   StatisticsSectionWrapper
 } from '@/styles/solution.styles';
@@ -220,7 +219,6 @@ export const StatisticsChartSection = () => {
           <ChartContainer>
             <h3>연도별 해양사고 발생 추이</h3>
             <ChartWrapper>
-              {loadingAccident && <LoadingMessage>해양사고 데이터 로드 중...</LoadingMessage>}
               {!loadingAccident && errorAccident && <ErrorMessage>{errorAccident}</ErrorMessage>}
               {!loadingAccident && !errorAccident && accidentData && (
                 <Bar data={accidentData} options={barChartOptions} />
@@ -231,7 +229,6 @@ export const StatisticsChartSection = () => {
           <ChartContainer>
             <h3>연도별 인명피해(사망/실종)</h3>
             <ChartWrapper>
-              {loadingCasualty && <LoadingMessage>인명피해 데이터 로드 중...</LoadingMessage>}
               {!loadingCasualty && errorCasualty && <ErrorMessage>{errorCasualty}</ErrorMessage>}
               {!loadingCasualty && !errorCasualty && casualtyData && (
                 <Line data={casualtyData} options={lineChartOptions} />

@@ -1,5 +1,11 @@
 import dynamic from 'next/dynamic';
-import { LoadingMessage, StatisticsInner, StatisticsSectionWrapper } from '@/styles/solution.styles';
+import {
+  ChartContainer,
+  ChartsGrid,
+  ChartWrapper,
+  StatisticsInner,
+  StatisticsSectionWrapper
+} from '@/styles/solution.styles';
 
 const StatisticsSectionClient = dynamic(
   () => import('@components/solution/StatisticsChartSection').then(mod => mod.StatisticsChartSection),
@@ -8,7 +14,16 @@ const StatisticsSectionClient = dynamic(
     loading: () => (
       <StatisticsSectionWrapper>
         <StatisticsInner>
-          <LoadingMessage>통계 차트 로드 중...</LoadingMessage>
+          <ChartsGrid>
+            <ChartContainer>
+              <h3>연도별 해양사고 발생 추이</h3>
+              <ChartWrapper>{/*<LoadingMessage>해양사고 데이터 로드 중...</LoadingMessage>*/}</ChartWrapper>
+            </ChartContainer>
+            <ChartContainer>
+              <h3>연도별 인명피해(사망/실종)</h3>
+              <ChartWrapper>{/*<LoadingMessage>인명피해 데이터 로드 중...</LoadingMessage>*/}</ChartWrapper>
+            </ChartContainer>
+          </ChartsGrid>
         </StatisticsInner>
       </StatisticsSectionWrapper>
     )

@@ -25,13 +25,11 @@ const Main: NextPageWithLayout = () => {
         </HeroInner>
       </HeroBackgroundSection>
       <HeroBannerSection>
-        <div>
-          <p>
-            혁신적 기술, <span>AI 기반 스마트 해양 안전 관제 시스템</span>
-          </p>
-          <br />
-          <p>&#39;AI·드론·GPS&#39; 24시간 예방적 감시, 신속한 초동 구조 대응으로 해양의 안전을 지키겠습니다.</p>
-        </div>
+        <p>
+          혁신적 기술, <span>AI 기반 스마트 해양 안전 관제 시스템</span>
+        </p>
+        <br />
+        <p>&#39;AI·드론·GPS&#39; 24시간 예방적 감시, 신속한 초동 구조 대응으로 해양의 안전을 지키겠습니다.</p>
       </HeroBannerSection>
     </HeroSection>
   );

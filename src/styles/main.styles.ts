@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { media } from '@/styles/common.styles';
 
 export const HeroSection = styled.div`
   position: relative;
@@ -7,6 +8,7 @@ export const HeroSection = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+
   video {
     position: absolute;
     top: 0;
@@ -47,6 +49,17 @@ export const HeroInner = styled.div`
   padding-right: 30px;
   text-align: right;
   overflow: hidden;
+
+  ${media.tablet} {
+    bottom: 11em;
+    padding-right: 20px;
+  }
+
+  ${media.mobile} {
+    bottom: 10em;
+    padding-right: 16px;
+    text-align: left;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -56,6 +69,16 @@ export const SubTitle = styled.p`
   color: white;
   animation: slideUpText 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
   opacity: 0;
+
+  ${media.tablet} {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  ${media.mobile} {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
 
   @keyframes slideUpText {
     from {
@@ -78,6 +101,16 @@ export const MainTitle = styled.h1`
   animation: slideUpText 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
   opacity: 0;
 
+  ${media.tablet} {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  ${media.mobile} {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
   @keyframes slideUpText {
     from {
       opacity: 0;
@@ -94,20 +127,48 @@ export const HeroBannerSection = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   z-index: 2;
   padding: 45px 80px;
   background: rgba(0, 0, 0, 0.87);
-
   color: white;
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  word-break: keep-all;
+
+  ${media.tablet} {
+    padding: 35px 24px;
+  }
+
+  ${media.mobile} {
+    padding: 35px 16px;
+  }
 
   p {
     font-size: 18px;
+
+    ${media.tablet} {
+      font-size: 16px;
+      min-width: auto;
+    }
+
+    ${media.mobile} {
+      font-size: 14px;
+      flex: 1 1 100%;
+    }
   }
 
   span {
     font-size: 20px;
     font-weight: bold;
+
+    ${media.tablet} {
+      font-size: 18px;
+    }
+
+    ${media.mobile} {
+      font-size: 16px;
+    }
   }
 `;
